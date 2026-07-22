@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desertbunny`s Site | Socials</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Devicon for dev icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Add this new div right here -->
+    <div id="blackout-overlay"></div>
+    
+    <canvas id="space-canvas"></canvas>
+    <!-- ... rest of your code ... -->
+    <canvas id="space-canvas"></canvas>
+
+    <div class="container">
+        <aside class="sidebar">
+            <!-- Profile Picture Box -->
+            <div class="profile-box">
+                <img id="profile-pic" src="https://file.garden/amCf4marYhtjo5NN/Gemini_Generated_Image_o0an0do0an0do0an.png" alt="Profile Picture" class="profile-pic">
+            </div>
+
+            <div class="nav-box">
+                <nav>
+                    <a href="index.html"> Home</a> 
+                    <a href="socials.html">>> Socials</a>
+                    <a href="blog.html">Blogs</a> 
+                </nav>
+            </div>
+            
+            <div class="gif-section">
+                <div class="gif-slot">
+                    <img src="https://file.garden/amCf4marYhtjo5NN/blinkiesCafe-pK.gif" class="hover-image">
+                </div>
+                <div class="gif-slot">
+                    <span class="hover-text"></span>
+                    <img src="https://blinkies.cafe/b/display/0275-bunnybounce.gif" class="hover-image" >
+                </div>
+                <div class="gif-slot">
+                    <span class="hover-text"></span>
+                    <img src="https://blinkies.cafe/b/display/0029-pinksparkle.gif" class="hover-image" >
+                </div>
+                <div class="gif-slot">
+                    <span class="hover-text"></span>
+                    <img src="https://blinkies.cafe/b/display/0257-dollcoupleheart.gif" class="hover-image" >
+                </div>
+                <div class="gif-slot">
+                    <span class="hover-text"></span>
+                    <img src="https://blinkies.cafe/b/display/0275-stressed.gif" class="hover-image" >
+                </div>
+                <div class="gif-slot">
+                    <span class="hover-text"></span>
+                    <img src="https://petrapixel.neocities.org/assets/img/blinkies/blinkies/gore.gif" class="hover-image" >
+                </div>
+                <div class="gif-slot">
+                    <span class="hover-text"></span>
+                    <img src="https://file.garden/amCf4marYhtjo5NN/rr.png" class="hover-image" style="height: 50px;" >
+                </div>
+            </div>
+
+            <div class="badge">CODED BY A CATGIRL</div>
+        </aside>
+        
+        <main class="content">
+            <h1 style="text-align: center;">SOCIALS</h1>
+            
+            <!-- Typewriter Profile Box -->
+            <div class="profile-message-box">
+                <p id="typewriter-text">
+                    <span id="text-content"></span><span class="cursor"></span>
+                </p>
+            </div>
+
+            <hr>
+
+            <!-- Social Links Grid with Icons -->
+            <div style="padding-top: 90px;" class="social-links-grid">
+                <!-- Discord -->
+                <a href="https://discord.gg/6gkg8z8DQ" target="_blank" class="social-box">
+                    <i class="fa-brands fa-discord"></i> Discord
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/marithadesertbunny/" target="_blank" class="social-box">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/Desertbunny67" target="_blank" class="social-box">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <!-- TryHackMe (using a hacker/terminal icon since they don't have an official one) -->
+                <a href="https://tryhackme.com/p/desertbunny67" target="_blank" class="social-box">
+                    <i class="fa-solid fa-user-secret"></i> TryHackMe
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Your existing background canvas script -->
+    <script src="script.js"></script>
+
+    <!-- The Typewriter Script -->
+    <script>
+        const textToType = "hello im Marisa feel free to contact me I am always open to collaborating on interesting projects or discussing new ideas Dont be shy!";
+        const typingSpeed = 40; // Adjust this number to make it type faster or slower
+        let charIndex = 0;
+        const textElement = document.getElementById("text-content");
+
+        function typeWriter() {
+            if (charIndex < textToType.length) {
+                textElement.innerHTML += textToType.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeWriter, typingSpeed);
+            }
+        }
+
+        // Wait a tiny bit after the page loads before starting to type
+        setTimeout(typeWriter, 300);
+    </script>
+</body>
+</html>
